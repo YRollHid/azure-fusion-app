@@ -20,6 +20,7 @@ IServiceCollection scheduleServiceCollection = builder.Services.AddDbContext<Sch
 
 builder.Services.AddControllers().AddNewtonsoftJson(options =>
     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+builder.Services.AddApplicationInsightsTelemetry(builder.Configuration["APPLICATIONINSIGHTS_CONNECTION_STRING"]);
 
 var app = builder.Build();
 

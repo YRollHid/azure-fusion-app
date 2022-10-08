@@ -7,9 +7,11 @@
     <UserSecretsId>1c4c294b-2735-41ce-a043-fa6c71ddc31d</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>.</DockerfileContext>
+    <ApplicationInsightsResourceId>/subscriptions/81a56de1-9b49-47a8-ae80-a15f0160f97d/resourceGroups/rg-powerapp-yrhpwc/providers/microsoft.insights/components/api-powerapp-yrhpwc</ApplicationInsightsResourceId>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.15.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.9" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.9">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
