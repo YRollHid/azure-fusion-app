@@ -11,6 +11,7 @@ FieldEngineerApi/appsettings.Development.json
 *.user
 *.userosscache
 *.sln.docstates
+nuget.config
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
